@@ -1,0 +1,49 @@
+.login-page {
+    background-color: #f4f6f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .item-footer {
+        text-align: center;
+
+        .register-link {
+            color: #2623e5;
+            /* Màu tím (hoặc bất kỳ màu nào bạn muốn) */
+            text-decoration: none;
+            /* Loại bỏ gạch chân mặc định */
+            font-weight: bold;
+            /* In đậm chữ */
+
+            &:hover {
+                color: blue;
+                /* Màu khi di chuột vào */
+                text-decoration: underline;
+                /* Gạch chân khi hover */
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .login-page {
+        min-height: 70vh;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 601px) {
+    .login-page {
+        min-height: 60vh;
+    }
+}

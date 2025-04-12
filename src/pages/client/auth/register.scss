@@ -1,0 +1,103 @@
+// .register-page {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     /* Chiều cao toàn màn hình */
+//     background-color: #f4f6f8;
+//     /* Màu nền nhạt */
+//     font-family: Arial, sans-serif;
+
+
+
+//     .container {
+//         background-color: #ffffff;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         min-width: 30rem;
+//         max-height: 100vh;
+//         padding: 20px;
+//     }
+
+
+// }
+
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Chiều cao toàn màn hình */
+    background-color: #f1f5f9;
+    /* Màu nền nhạt */
+    font-family: inherit;
+
+    .container {
+        background-color: #ffffff;
+        min-width: 30rem;
+        max-width: 600px;
+        /* Giới hạn chiều rộng */
+        padding: 30px;
+        border-radius: 10px;
+        /* Đổ bóng nhẹ */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+
+        .btn-regis {
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+
+    .item-footer {
+        text-align: center;
+
+        .login-link {
+            color: #2623e5;
+            /* Màu tím (hoặc bất kỳ màu nào bạn muốn) */
+            text-decoration: none;
+            /* Loại bỏ gạch chân mặc định */
+            font-weight: bold;
+            /* In đậm chữ */
+
+            &:hover {
+                color: blue;
+                /* Màu khi di chuột vào */
+                text-decoration: underline;
+                /* Gạch chân khi hover */
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .register-page {
+        max-width: 100%;
+        max-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            min-width: 60%;
+            min-height: 80vh;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 601px) {
+    .register-page {
+        max-width: 100%;
+        max-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            min-width: 60%;
+            min-height: 80vh;
+        }
+    }
+}

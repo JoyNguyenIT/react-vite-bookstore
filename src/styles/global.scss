@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+}
+
+.popover-cart {
+    .popover-body {
+        display: flex;
+        flex-direction: column;
+
+        .book-cart {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 20px;
+
+            .image-carts {
+                width: 50px;
+                height: 50px;
+            }
+
+            .book-price {
+                color: #ff3a08;
+            }
+
+        }
+    }
+
+    .popover-footer {
+        display: flex;
+        justify-content: end;
+
+        .btn-cart {
+            background-color: #ff3400;
+            color: white;
+            height: 40px;
+            border: none;
+            border-radius: 3px;
+            padding: 0 20px;
+            cursor: pointer;
+        }
+    }
+
+}

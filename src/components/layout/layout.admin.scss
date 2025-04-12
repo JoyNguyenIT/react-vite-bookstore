@@ -1,0 +1,10 @@
+.header-admin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .avatar-user {
+        position: relative;
+        right: 30px;
+    }
+}

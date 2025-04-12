@@ -1,0 +1,84 @@
+.homepage-content {
+    display: flex;
+    margin: 10px 0 0 0;
+
+    .ant-rate-span {
+        margin-left: 1em;
+    }
+
+    .customize-row {
+        display: flex;
+        flex-wrap: wrap;
+
+        .product-content {
+            margin: 10px 3px;
+            box-shadow: 2px 2px 2px #e1e1e1;
+            width: calc(20% - 8px);
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0 0.0625rem 20px 0 rgba(0, 0, 0, .05);
+                -webkit-transform: translateY(-0.0625rem);
+                transform: translateY(-0.0625rem);
+            }
+
+            .thumbnail {
+                display: block;
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+                object-fit: contain;
+                margin: 0 auto;
+            }
+
+            .text {
+                padding: .5rem .5rem;
+                font-size: .8rem;
+                font-weight: 500;
+                height: 50px;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                justify-content: left;
+            }
+
+            .price {
+                padding: 0 .5rem;
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .rating {
+                padding: 0 .5rem;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .product-content {
+                flex: unset;
+                width: calc(50% - 8px);
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (max-width: 800px) and (min-width: 601px) {
+            .product-content {
+                flex: unset;
+                flex-wrap: wrap;
+                width: calc(25% - 8px);
+            }
+        }
+
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}

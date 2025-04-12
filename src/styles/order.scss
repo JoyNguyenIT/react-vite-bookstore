@@ -1,0 +1,64 @@
+.order-container {
+    width: 100%;
+    margin: 0 auto;
+    maxWidth: 1440;
+    overflow: "hidden";
+
+    .book-order {
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        background-color: white;
+        width: 100%;
+        padding: 10px;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        .book-infor {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            width: 50%;
+        }
+
+        .delete-book {
+            margin-right: 30px;
+            cursor: pointer;
+        }
+    }
+
+
+    .sumPrice-cart {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        gap: 20px;
+        margin-left: 10px;
+
+        .sum-temp {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .final-sum {
+            display: flex;
+            justify-content: space-between;
+
+            .sum-currency {
+                color: #ff4b00;
+                font-weight: 400;
+                font-size: 25px;
+            }
+        }
+    }
+
+    .order-steps {
+        background-color: white;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+}

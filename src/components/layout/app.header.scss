@@ -1,0 +1,147 @@
+.header-container {
+    margin: 10px 0px 0px 50px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding: 10px;
+
+    .title-icon-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(2, 175, 255);
+        gap: 5px;
+        cursor: pointer;
+
+        .react-icon {
+            font-size: 30px;
+            animation: spin 15s infinite linear;
+        }
+
+        .title-name {
+            position: relative;
+            font-size: 15px;
+            bottom: 2px;
+        }
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+
+    .search-input {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+
+        .search-icon {
+            position: relative;
+            font-size: 15px;
+            left: 25px;
+            color: rgb(2, 175, 255);
+            ;
+        }
+
+
+        .input-item {
+            outline: none;
+            border: 1px solid #ddd;
+            width: 50rem;
+            height: 30px;
+            border-radius: 5px;
+            padding-left: 30px;
+        }
+    }
+
+    .shopping-cart {
+        margin-left: 20px;
+
+        .cart-icon {
+            font-size: 20px;
+            color: rgb(2, 175, 255);
+            position: relative;
+            top: 5px;
+        }
+    }
+
+    .avatar-user {
+        margin-left: 20px;
+        color: #b5adad;
+
+        :hover {
+            cursor: pointer;
+        }
+    }
+
+    .login-button {
+        background-image: linear-gradient(to right, #36D1DC 0%, #5B86E5 51%, #36D1DC 100%)
+    }
+
+    .login-button {
+        margin-left: 15px;
+        text-align: center;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .login-button:hover {
+        background-image: linear-gradient(to left, #36D1DC 100%, #36D1DC 0%, #5B86E5 100%) !important;
+        opacity: 0.7;
+        color: white !important;
+        text-decoration: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        margin: 10px 0px 0px 15px;
+        display: flex;
+
+        .title-icon-name {
+            display: none;
+        }
+
+        .toggle-menu {
+            display: block;
+            font-size: 2em;
+        }
+
+        .search-input {
+            margin-left: 0px;
+            padding-left: 0px;
+            outline: none;
+            justify-content: center;
+            flex-grow: 1;
+
+            .input-item {
+                border: 1px solid #ddd;
+                width: 12rem;
+                height: 30px;
+                border-radius: 5px;
+                padding-left: 30px;
+            }
+        }
+
+
+    }
+
+    .shopping-cart {
+        margin-right: 40px;
+        cursor: pointer;
+    }
+
+
+    .avatar-user {
+        display: none;
+    }
+
+    .login-button {
+        margin-right: 40px;
+    }
+
+}
